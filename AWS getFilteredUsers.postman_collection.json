@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "42c72044-d28b-4cf0-926d-8cf901b5d621",
+		"name": "AWS getFilteredUsers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getFilteredUsers (Serverless lambda)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"users\": [\r\n        {\r\n            \"firstName\": \"Darrick\",\r\n            \"lastName\": \"Koelpin\",\r\n            \"age\": 10\r\n        },\r\n        {\r\n            \"firstName\": \"Darrick\",\r\n            \"lastName\": \"Delgado\",\r\n            \"age\": 2\r\n        }\r\n    ],\r\n    \"filter\": { \r\n        \"firstName\": \"Darrick\", \r\n        \"age\": 2\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/dev/getFilteredUsers",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"dev",
+						"getFilteredUsers"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://08fscugn3k.execute-api.us-east-1.amazonaws.com"
+		}
+	]
+}
