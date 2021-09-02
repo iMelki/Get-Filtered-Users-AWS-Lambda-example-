@@ -1,0 +1,6 @@
+{
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": "{\"users\": [{\"firstName\": \"Darrick\", \"lastName\": \"Koelpin\", \"age\": 10}, {\"firstName\": \"Darrick\", \"lastName\": \"Delgado\", \"age\": 2}], \"filter\": {\"firstName\": \"Darrick\", \"age\": 2}}"
+}
