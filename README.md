@@ -106,7 +106,6 @@ The project code base is mainly located within the `src` folder. This folder is 
 - [@serverless/typescript](https://github.com/serverless/typescript) - provides up-to-date TypeScript definitions for your `serverless.ts` service file
 
 - [@lodash](https://github.com/lodash/lodash) - provides object and array manipulations
-- [@lodash](https://github.com/lodash/lodash) - provides object and array manipulations
 
 ### Advanced usage
 
